@@ -17,5 +17,5 @@ int main() {
     }
 
     v.~vector();
-    return 0;
+    return 00;
 }
