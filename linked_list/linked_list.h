@@ -4,7 +4,7 @@
 struct Node {
     Node();
 
-    float info;
+    int info;
     Node* next;
 };
 
@@ -13,7 +13,13 @@ struct LinkedList {
     ~LinkedList();
 
     Node* head;
-    void insert_front(float info);
+    
+    Node* insert_back(int info);
+    Node* insert_front(int info);
+    bool is_empty();
+    unsigned int length();
+    Node* search(int value);
+    void remove(int value);
     void print();
 };
 
